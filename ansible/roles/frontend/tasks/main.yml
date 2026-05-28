@@ -1,3 +1,6 @@
+# Installs and configures nginx frontend server
+# and deploys the dashboard UI.
+
 ---
 - name: Install nginx
   apt:

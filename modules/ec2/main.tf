@@ -1,3 +1,6 @@
+# This module creates the EC2 instances used by the application:
+# frontend server, backend API server and worker service.
+
 resource "aws_instance" "frontend" {
   ami                         = var.ami_id
   instance_type               = var.instance_type

@@ -1,3 +1,6 @@
+# Deploys Flask backend API, environment variables
+# and systemd service configuration.
+
 ---
 - name: Install backend dependencies
   apt:

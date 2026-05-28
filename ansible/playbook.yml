@@ -1,3 +1,6 @@
+# Main Ansible playbook.
+# Configures all EC2 instances after Terraform provisioning.
+
 ---
 - name: Configure all servers
   hosts: all

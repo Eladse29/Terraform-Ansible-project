@@ -1,3 +1,6 @@
+# Deploys internal worker Flask service
+# used for backend processing and health checks.
+
 ---
 - name: Install worker dependencies
   apt:

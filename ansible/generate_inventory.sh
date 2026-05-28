@@ -1,3 +1,5 @@
+# Generate Ansible inventory dynamically from Terraform outputs
+
 #!/bin/bash
 
 cd ../
