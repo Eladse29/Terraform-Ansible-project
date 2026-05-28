@@ -1,3 +1,6 @@
+# This module creates a PostgreSQL RDS instance and subnet group
+# used by the backend service to store application data.
+
 resource "aws_db_subnet_group" "main" {
   name       = "${var.project_name}-${var.environment}-db-subnet-group"
   subnet_ids = var.subnet_ids

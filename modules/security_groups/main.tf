@@ -1,3 +1,9 @@
+# Security groups are configured with least privilege:
+# - Frontend exposes HTTP publicly and SSH only from the user's IP.
+# - Backend is reachable on port 5000 only from the frontend security group.
+# - Worker is reachable on port 5001 only from the backend security group.
+# - RDS PostgreSQL is reachable on port 5432 only from the backend security group.
+
 resource "aws_security_group" "frontend_sg" {
   name        = "${var.project_name}-${var.environment}-frontend-sg"
   description = "Security group for frontend server"
